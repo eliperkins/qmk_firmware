@@ -11,7 +11,5 @@
 #define EE_HANDS
 #define SPLIT_USB_DETECT
 
-#define SSD1306OLED
-
 #define USE_SERIAL_PD2
 #define TAPPING_TERM_PER_KEY
