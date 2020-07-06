@@ -2,7 +2,13 @@
 #include <stdio.h>
 
 #ifndef KEYLOGGER_LENGTH
+
+#ifdef OLED_DRIVER_ENABLE
 #define KEYLOGGER_LENGTH ((int)(OLED_DISPLAY_HEIGHT / OLED_FONT_WIDTH))
+#else
+#define KEYLOGGER_LENGTH 32
+#endif
+
 #endif
 
 static char     keylog_str[KEYLOGGER_LENGTH + 1] = {"\n"};
